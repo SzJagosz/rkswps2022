@@ -6,10 +6,23 @@
       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
   </head>
   <body>
-    <ul class="fix-menu">
-        <li><a href="/">Home</a>
-        <li class="active"><a href="/billing">Billing</a>
-        <li><a href="insert">Insert</a>
-    </ul>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a class="active" href="/billing">Billing</a>
+      <a href="/insert">Insert</a>
+    </div>
+
+      <img src="{{url_for('static', filename='logo.png')}}" align="middle" class="logo" />
+
+    <div class="input-section">
+      <form name="billing-input">
+        <label for="Start Date" class="input-label">Start Date</label>
+        <input type="date" class="input-date" id="start-date" name="Start Date">
+        <label for="End Date" class="input-label">End Date</label>
+        <input type="date" class="input-date" id="end-date" name="End Date">
+        <input type="submit" class="input-button">
+    </form>
+    </div>
+
   </body>
   </html>
