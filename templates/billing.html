@@ -15,11 +15,11 @@
       <img src="{{url_for('static', filename='logo.png')}}" align="middle" class="logo" />
 
     <div class="input-section">
-      <form name="billing-input">
+      <form name="billing-input" method="post">
         <label for="Start Date" class="input-label">Start Date</label>
-        <input type="date" class="input-date" id="start-date" name="Start Date">
+        <input type="date" class="input-date" id="start-date" name="start_date" name="Start Date">
         <label for="End Date" class="input-label">End Date</label>
-        <input type="date" class="input-date" id="end-date" name="End Date">
+        <input type="date" class="input-date" id="end-date" name="end_date" name="End Date">
         <input type="submit" class="input-button">
     </form>
     </div>

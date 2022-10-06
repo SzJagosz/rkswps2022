@@ -37,7 +37,7 @@ def billing_data():
     print("Running BILLING .PS1 script...")
     subprocess.call("powershell .\\billing.ps1")
     with open("billing.csv") as file:
-        return render_template('index.html', csv=file)
+        return render_template('home.html', csv=file)
     
 
 if __name__ == '__main__':
