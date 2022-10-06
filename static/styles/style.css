@@ -6,6 +6,12 @@
     --orange_soft: #f8ad0b;
     --white:#ffffff;
     --black: black;
+        --bg-color:#021724;
+    --txt-color: white;
+    --border-color: white;
+    --bg-menu-color: #07283d;
+    --bg-menu-active:#f5931f;
+    --bg-menu-hover:#cb6f00;
   }
 /*----------------------- Body style --------------------------*/
 body {
@@ -77,3 +83,47 @@ input[type=submit], input[type=reset] {
     padding: 20px 0px;
     width: 10%;
  }
+.h3{
+  font: normal normal normal 20px/1 Helvetica, arial, sans-serif;
+  border-bottom: 2px solid var(--bg-menu-hover);
+  background:var(--bg-menu-active);
+  color:var(--txt-color);
+
+  display:inline-block;
+  padding:3px 15px;
+  margin-left:10px;
+}
+.h3:after{
+  left:0px;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:3px;
+  margin-top:2px;
+  content: " ";
+  background:var(--bg-menu-active);
+}
+
+.content-table {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.content-table td, .content-table th {
+  border: 1px solid var(--orange);
+  padding: 8px;
+}
+
+.content-table tr:nth-child{background-color: #131313;}
+
+.content-table tr:hover {background-color: rgb(58, 30, 7);}
+
+.content-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--blue);
+  color: white;
+}

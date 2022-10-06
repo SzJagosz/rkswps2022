@@ -23,6 +23,17 @@
         <input type="submit" class="input-button">
     </form>
     </div>
+    <h3>Azure Billing Data</h3>
+
+    <table class="content-table" style="width:100%">
+      {% for row in csv %}
+        <tr>
+        {% for col in row.split(";") %}
+        <td>{{ col }}</td>
+        {% endfor %}
+        </tr>
+      {% endfor %}
+      </table>
 
   </body>
   </html>

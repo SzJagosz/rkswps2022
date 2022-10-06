@@ -1,0 +1,8 @@
+"Type";"Component";"Count";"Cost(EUR)";"CostAV(EUR)"
+"OperationalInsights";"workspaces";"6";"2.92";"0.49"
+"Compute";"disks";"7";"3.6";"0.51"
+"Compute";"virtualMachines";"17";"0.94";"0.06"
+;;"18";"2.39";"0.13"
+"Network";"publicIPAddresses";"8";"0.44";"0.05"
+"ContainerRegistry";"registries";"2";"0.03";"0.01"
+"Storage";"storageAccounts";"14";"0";"0"
