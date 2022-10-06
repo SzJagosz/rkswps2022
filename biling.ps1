@@ -15,7 +15,6 @@ $azure_billing_group_instance = $azure_billing_data | Group-Object InstanceName 
 $azure_billing_group_type = $azure_billing_data | Group-Object ResType | Select-Object name, @{ n='Count'; e={$_.count } }, @{ n='Cost(EUR)'; e={ [math]::Round((($_.Group | Measure-Object 'PretaxCost' -Sum).Sum),2) } }, @{ n='CostAV(EUR)'; e={ [math]::Round((($_.Group | Measure-Object 'PretaxCost' -Average).Average ),2) }}
 
 
-
 $azure_billing_data |Export-Csv  -NoTypeInformation -Path ".\billing.csv" -Delimiter ';'
 $cleaner = Get-Content .\billing_db.csv
 $cleaner.Replace('","',",").TrimStart('"').TrimEnd('"') | Out-File .\billing_db.csv -Force -Confirm:$false
