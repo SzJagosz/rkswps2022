@@ -1,17 +1,17 @@
 /*----------------------- Variables --------------------------*/
 :root {
-    --blue:#124261;
-    --blue_dark:#031d2e;
+    --blue_dark:#323232;
+    --blue:#1e1e1e;
     --orange: #f5931f;
     --orange_soft: #f8ad0b;
     --white:#ffffff;
     --black: black;
-        --bg-color:#021724;
+    --bg-color:#021724;
     --txt-color: white;
     --border-color: white;
     --bg-menu-color: #07283d;
     --bg-menu-active:#f5931f;
-    --bg-menu-hover:#cb6f00;
+    --bg-menu-hover:#ffb700;
   }
 /*----------------------- Body style --------------------------*/
 body {
@@ -83,7 +83,7 @@ input[type=submit], input[type=reset] {
     padding: 20px 0px;
     width: 10%;
  }
-.h3{
+ h3{
   font: normal normal normal 20px/1 Helvetica, arial, sans-serif;
   border-bottom: 2px solid var(--bg-menu-hover);
   background:var(--bg-menu-active);
@@ -93,7 +93,7 @@ input[type=submit], input[type=reset] {
   padding:3px 15px;
   margin-left:10px;
 }
-.h3:after{
+h3:after{ 
   left:0px;
   display:block;
   position:absolute;
@@ -103,7 +103,6 @@ input[type=submit], input[type=reset] {
   content: " ";
   background:var(--bg-menu-active);
 }
-
 .content-table {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -116,9 +115,10 @@ input[type=submit], input[type=reset] {
   padding: 8px;
 }
 
+
 .content-table tr:nth-child{background-color: #131313;}
 
-.content-table tr:hover {background-color: rgb(58, 30, 7);}
+.content-table tr:hover {background-color: var(--bg-menu-active);}
 
 .content-table th {
   padding-top: 12px;

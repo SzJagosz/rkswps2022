@@ -1,0 +1,8 @@
+Type,Component,Count,Cost(EUR),CostAV(EUR)
+OperationalInsights,workspaces,11,3.87,0.35
+Compute,virtualMachines,37,5.65,0.15
+Compute,disks,13,7,0.54
+Cluster,AKS Clusters,43,4.22,0.1
+Network,publicIPAddresses,15,0.85,0.06
+ContainerRegistry,registries,2,0.03,0.01
+Storage,storageAccounts,24,0,0

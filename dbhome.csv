@@ -1,0 +1,11 @@
+Resource Group Name,AKS Name,Min Nodes,Max Nodes,OS,Instance Name,Time
+ing-hackathon-rg,ing-aks-win-king,2,3,Windows,test01,17:50:01
+ing-hackathon-rg,ing-aks-win-king,2,4,Linux,test01,18:05:42
+ing-hackathon-rg,ing-aks-win-king,2,4,Linux,test01,18:08:18
+ing-hackathon-rg,ing-aks-win-king,2,3,Windows,test01,18:10:16
+ing-hackathon-rg,ing-aks-win-king,2,3,Windows,test01,18:17:45
+ing-hackathon-rg,ing-aks-win-king,2,3,Windows,test01,18:22:12
+ing-hackathon-rg,ing-aks-win-king3,2,4,Windows,psiwix,19:14:05
+ing-hackathon-rg,ing-aks-win-king3,2,3,Linux,psiwiv,19:14:05
+ing-hackathon-rg,ing-aks-win-king,2,4,Windows,psiwin,09:16:35
+ing-hackathon-rg,ing-aks-win-king4,2,3,Windows,psiwin,11:16:43

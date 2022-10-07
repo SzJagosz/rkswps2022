@@ -8,11 +8,44 @@
   <body>
     <div class="topnav">
         <a class="active" href="/">Home</a>
+        <a href="/insert">New Web App</a>
         <a href="/billing">Billing</a>
-        <a href="/insert">Insert</a>
-      </div>
 
-        <img src="{{url_for('static', filename='logo.png')}}" align="middle" class="logo" />
+        
+        
+      </div>
+      <img src="{{url_for('static', filename='logo.png')}}" align="middle" class="logo" />
+        <h3>SSPCP Applications</h3>
+        <table class="content-table" style="width:100%">
+          <tr>
+            <th>Resource Group Name</th>
+            <th>AKS Name</th>
+            <th>Instance Name</th>
+            <th>OS Type</th>
+            <th>Time</th>
+            <th>Stauts</th>
+          </tr>
+          <tr>
+            <td>{{ res_gr }}</td>
+            <td>{{ aks_name }}</td>
+            <td>{{ instance_name }}</td>
+            <td>{{ os }}</td>
+            <td>{{ current_time }}</td>
+            <td>{{ status }}</td>
+          </tr>
+        </table>
+
+        
+        <h3>SSPCP Resources</h3>
+        <table class="content-table" style="width:100%">
+          {% for row in csv %}
+            <tr>
+            {% for col in row.split(",") %}
+            <td>{{ col }}</td>
+            {% endfor %}
+            </tr>
+          {% endfor %}
+          </table>
 
 
 

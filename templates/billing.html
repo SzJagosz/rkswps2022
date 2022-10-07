@@ -8,8 +8,9 @@
   <body>
     <div class="topnav">
       <a href="/">Home</a>
+      <a href="/insert">New Web App</a>
       <a class="active" href="/billing">Billing</a>
-      <a href="/insert">Insert</a>
+      
     </div>
 
       <img src="{{url_for('static', filename='logo.png')}}" align="middle" class="logo" />
@@ -20,20 +21,19 @@
         <input type="date" class="input-date" id="start-date" name="start_date" name="Start Date">
         <label for="End Date" class="input-label">End Date</label>
         <input type="date" class="input-date" id="end-date" name="end_date" name="End Date">
-        <input type="submit" class="input-button">
+        <input type="submit" class="input-button" value="Get Billing">
     </form>
     </div>
-    <h3>Azure Billing Data</h3>
+    <h3>SSPCP Billing Details</h3>
 
     <table class="content-table" style="width:100%">
       {% for row in csv %}
         <tr>
-        {% for col in row.split(";") %}
+        {% for col in row.split(",") %}
         <td>{{ col }}</td>
         {% endfor %}
         </tr>
-      {% endfor %}
-      </table>
+      {% endfor %} 
 
   </body>
   </html>

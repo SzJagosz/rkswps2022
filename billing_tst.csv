@@ -1,0 +1,7 @@
+"Type","Component","Count","Cost (EUR)","CostAV (EUR)","Cost (%)"
+"Resource removed","Resource removed","6","0.52","0.09","11"
+"Compute","disks","2","1.06","0.53","22"
+"Compute","virtualMachines","16","2.59","0.16","54"
+"Network","publicIPAddresses","8","0.31","0.04","6"
+"OperationalInsights","workspaces","2","0.3","0.15","6"
+"Storage","storageAccounts","7","0","0","0"
